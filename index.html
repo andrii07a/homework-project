@@ -1,132 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .board {
-      width: min(100vh, 100vw);
-      height: min(100vh, 100vw);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .row {
-      flex: 1;
-      display: flex;
-    }
-
-    .square {
-      flex: 1;
-    }
-
-    .row:nth-child(odd) .square:nth-child(odd),
-    .row:nth-child(even) .square:nth-child(even) {
-      background-color: white;
-    }
-
-    .row:nth-child(odd) .square:nth-child(even),
-    .row:nth-child(even) .square:nth-child(odd) {
-      background-color: black;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokemon</title>
+ <link rel="stylesheet" href="style.12.css">
 </head>
 <body>
-  <div class="board">
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-  </div>
+  <h1>Pokemon</h1>
+
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Name or number (e.g. pikachu)">
+    <button type="submit">Search</button>
+  </form>
+
+  <p id="message"></p>
+
+  <h2>Pokemon list</h2>
+  <div id="list"></div>
+
+  <h2>Details</h2>
+  <div id="details"></div>
+
+ <script src="script.js"></script>
 </body>
 </html>
