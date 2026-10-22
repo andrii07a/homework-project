@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Pasaulio šalys</h1>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Ieškoti šalies pagal pavadinimą...">
+    <select id="region">
+      <option value="all">Visi regionai</option>
+    </select>
+    <select id="sort">
+      <option value="name-asc">Pavadinimas A–Z</option>
+      <option value="name-desc">Pavadinimas Z–A</option>
+      <option value="pop-desc">Gyventojai (daugiausiai)</option>
+      <option value="pop-asc">Gyventojai (mažiausiai)</option>
+      <option value="area-desc">Plotas (didžiausias)</option>
+    </select>
+  </div>
+
+  <div id="info"></div>
+  <div id="grid"></div>
+  <div id="message"></div>
+
+  <div id="modal">
+    <div id="modalBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
